@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Athulya SB | Child & Adult Psychologist</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config={
+theme:{
+extend:{
+colors:{
+primary:'#4A90E2',
+secondary:'#6CBAD9'
+},
+borderRadius:{
+'none':'0px',
+'sm':'4px',
+DEFAULT:'8px',
+'md':'12px',
+'lg':'16px',
+'xl':'20px',
+'2xl':'24px',
+'3xl':'32px',
+'full':'9999px',
+'button':'8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=Professional%20psychology%20office%20with%20calming%20blue%20tones%2C%20soft%20natural%20light%20coming%20through%20windows%2C%20minimalist%20furniture%2C%20plants%2C%20and%20a%20blurred%20background%20that%20suggests%20a%20peaceful%20therapy%20environment.%20The%20left%20side%20has%20more%20empty%20space%20with%20lighter%20colors%20transitioning%20to%20the%20right%20side%20with%20more%20elements.%20No%20people%20visible.&width=1920&height=700&seq=hero123&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.appointment-btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(74, 144, 226, 0.25);
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.testimonial-card {
+transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+transform: scale(1.02);
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #4A90E2;
+box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+.custom-checkbox {
+appearance: none;
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #d1d5db;
+border-radius: 4px;
+margin-right: 8px;
+position: relative;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+.custom-checkbox:checked {
+background-color: #4A90E2;
+border-color: #4A90E2;
+}
+.custom-checkbox:checked::after {
+content: '';
+position: absolute;
+top: 4px;
+left: 7px;
+width: 6px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.switch-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e5e7eb;
+transition: .4s;
+border-radius: 34px;
+}
+.switch-slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .switch-slider {
+background-color: #4A90E2;
+}
+input:checked + .switch-slider:before {
+transform: translateX(26px);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+<div class="container mx-auto px-6 py-5 flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary tracking-wide">logo</a>
+<nav class="hidden lg:flex items-center space-x-12">
+<a href="#" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+<a href="#about" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">About</a>
+<a href="#services" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">Services</a>
+<a href="#expertise" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">Expertise</a>
+<a href="#projects" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">Projects</a>
+<a href="#blog" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">Blog</a>
+<a href="#contact" class="text-gray-800 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+</nav>
+<div class="hidden lg:flex items-center">
+<a href="#appointment" class="appointment-btn bg-primary text-white px-6 py-2.5 !rounded-button font-medium transition-all duration-300 hover:bg-primary/90 whitespace-nowrap flex items-center gap-2">
+<i class="ri-calendar-line"></i>
+<span>Book Appointment</span>
+</a>
+</div>
+<button class="lg:hidden w-12 h-12 flex items-center justify-center text-gray-800 hover:text-primary transition-colors duration-300">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative">
+<div class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/40"></div>
+<div class="container mx-auto px-4 py-20 md:py-28 relative z-10">
+<div class="max-w-3xl">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Specialized Care for Children & Adults</h1>
+<p class="text-lg text-gray-700 mb-8">With over 3 years of dedicated experience, I provide compassionate psychological support tailored to your unique needs. Specializing in child behavioral therapy and adult emotional wellbeing.</p>
+<div class="flex flex-col sm:flex-row gap-4 mb-10">
+<a href="#child-services" class="bg-primary text-white px-6 py-3 !rounded-button font-medium transition-all hover:bg-primary/90 text-center whitespace-nowrap">Child Behavioral Therapy</a>
+<a href="#adult-services" class="bg-white text-primary border-2 border-primary px-6 py-3 !rounded-button font-medium transition-all hover:bg-gray-50 text-center whitespace-nowrap">Adult Emotional Support</a>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-medal-line text-primary"></i>
+</div>
+<span class="text-sm font-medium">Licensed Clinical Psychologist</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-graduation-cap-line text-primary"></i>
+</div>
+<span class="text-sm font-medium">PhD in Child Psychology</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-health-book-line text-primary"></i>
+</div>
+<span class="text-sm font-medium">Certified in CBT & EMDR</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=Professional%20female%20psychologist%20in%20her%2030s%20with%20a%20warm%2C%20approachable%20expression%2C%20wearing%20professional%20attire%20in%20soft%20blue%20tones%2C%20sitting%20in%20a%20comfortable%20office%20chair%20with%20bookshelves%20and%20plants%20in%20the%20background%2C%20natural%20lighting%2C%20warm%20and%20inviting%20atmosphere&width=600&height=700&seq=psychologist1&orientation=portrait" alt="Athulya SB" class="rounded-lg shadow-lg w-full h-auto object-cover object-top">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Athulya SB</h2>
+<p class="text-gray-700 mb-6">With over 3 years of specialized experience in psychological care, I am dedicated to helping both children and adults navigate life's challenges with evidence-based therapeutic approaches.</p>
+<p class="text-gray-700 mb-6">After completing my PhD in Child Psychology from the University of Edinburgh, I specialized in treating behavioral disorders in children and emotional regulation in adults. My practice combines cognitive-behavioral therapy, mindfulness techniques, and play therapy to create personalized treatment plans.</p>
+<p class="text-gray-700 mb-8">I have had the privilege of working with the Kerala Government on several mental health initiatives and maintaining a thriving practice at the Community Wellness Center in Kochi.</p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-mental-health-line text-primary"></i>
+</div>
+<span class="font-medium">Child Behavior Specialist</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-psychotherapy-line text-primary"></i>
+</div>
+<span class="font-medium">Trauma-Informed Care</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-emotion-line text-primary"></i>
+</div>
+<span class="font-medium">Emotional Regulation</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-parent-line text-primary"></i>
+</div>
+<span class="font-medium">Family Therapy</span>
+</div>
+</div>
+<a href="#contact" class="inline-block bg-primary text-white px-6 py-3 !rounded-button font-medium transition-all hover:bg-primary/90 whitespace-nowrap">Schedule a Consultation</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Expertise Areas -->
+<section id="expertise" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Areas of Expertise</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">Specialized psychological care tailored to address the unique challenges faced by children and adults.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Child Behavioral Cases -->
+<div id="child-services" class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-6">
+<i class="ri-teddy-bear-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Child Behavioral Therapy</h3>
+<p class="text-gray-700 mb-6">Specialized support for children facing behavioral challenges, developmental concerns, and emotional difficulties.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Attention Deficit Hyperactivity Disorder (ADHD)</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Autism Spectrum Disorders</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Anxiety and Depression in Children</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Learning Disabilities and Academic Challenges</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Behavioral Management and Parenting Support</span>
+</li>
+</ul>
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="bg-blue-50 px-4 py-2 rounded-full">
+<span class="text-sm font-medium text-primary">Play Therapy</span>
+</div>
+<div class="bg-blue-50 px-4 py-2 rounded-full">
+<span class="text-sm font-medium text-primary">Cognitive Behavioral Therapy</span>
+</div>
+<div class="bg-blue-50 px-4 py-2 rounded-full">
+<span class="text-sm font-medium text-primary">Family Systems Approach</span>
+</div>
+</div>
+<a href="#contact" class="inline-block bg-primary text-white px-6 py-3 !rounded-button font-medium transition-all hover:bg-primary/90 whitespace-nowrap">Learn More</a>
+</div>
+<!-- Adult Emotional Support -->
+<div id="adult-services" class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-6">
+<i class="ri-mental-health-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Adult Emotional Support</h3>
+<p class="text-gray-700 mb-6">Compassionate therapy for adults navigating emotional challenges, life transitions, and mental health concerns.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Anxiety and Panic Disorders</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Depression and Mood Disorders</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Trauma and PTSD Recovery</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Relationship and Interpersonal Difficulties</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Work-Life Balance and Stress Management</span>
+</li>
+</ul>
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="bg-blue-50 px-4 py-2 rounded-full">
+<span class="text-sm font-medium text-primary">Cognitive Behavioral Therapy</span>
+</div>
+<div class="bg-blue-50 px-4 py-2 rounded-full">
+<span class="text-sm font-medium text-primary">Mindfulness-Based Approaches</span>
+</div>
+<div class="bg-blue-50 px-4 py-2 rounded-full">
+<span class="text-sm font-medium text-primary">EMDR Therapy</span>
+</div>
+</div>
+<a href="#contact" class="inline-block bg-primary text-white px-6 py-3 !rounded-button font-medium transition-all hover:bg-primary/90 whitespace-nowrap">Learn More</a>
+</div>
+</div>
+<!-- Success Statistics -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">300+</div>
+<p class="text-gray-700">Children Supported</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">450+</div>
+<p class="text-gray-700">Adult Clients</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">85%</div>
+<p class="text-gray-700">Improvement Rate</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">12</div>
+<p class="text-gray-700">Government Projects</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Government Projects Showcase -->
+<section id="projects" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Kerala Government Collaborations</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">Proud to partner with the Kerala Government on initiatives that promote mental health awareness and provide accessible psychological support.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Kerala%20government%20building%20with%20traditional%20architecture%20elements%2C%20surrounded%20by%20lush%20greenery%2C%20with%20a%20sign%20indicating%20mental%20health%20department%2C%20professional%20setting%2C%20soft%20lighting%2C%20no%20people%20visible&width=600&height=400&seq=govt1&orientation=landscape" alt="Kerala Health Department Collaboration" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-government-line text-primary"></i>
+</div>
+<span class="text-sm font-medium text-gray-500">Kerala Health Department</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">School Mental Health Program</h3>
+<p class="text-gray-700 mb-4">Led a comprehensive mental health screening and support program across 15 public schools in Kerala, reaching over 5,000 students and providing early intervention for children with behavioral challenges.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-calendar-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">2023 - Present</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-user-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">5,000+ Students</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20community%20awareness%20campaign%20in%20Kerala%20with%20information%20boards%20about%20mental%20health%2C%20educational%20materials%20displayed%20on%20tables%2C%20in%20a%20community%20hall%20setting%20with%20traditional%20Kerala%20architectural%20elements%20visible%2C%20professional%20setup&width=600&height=400&seq=govt2&orientation=landscape" alt="Mental Health Awareness Campaign" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-mental-health-line text-primary"></i>
+</div>
+<span class="text-sm font-medium text-gray-500">Kerala Mental Health Authority</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Community Awareness Campaign</h3>
+<p class="text-gray-700 mb-4">Designed and implemented a state-wide mental health awareness campaign focusing on reducing stigma and increasing access to psychological support services in rural communities.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-calendar-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">2022 - 2023</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-map-pin-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">12 Districts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20training%20workshop%20for%20healthcare%20professionals%20in%20Kerala%2C%20with%20a%20professional%20setting%20showing%20educational%20materials%2C%20presentation%20screens%20with%20mental%20health%20information%2C%20in%20a%20modern%20conference%20room%20with%20traditional%20Kerala%20elements&width=600&height=400&seq=govt3&orientation=landscape" alt="Healthcare Professional Training" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-hospital-line text-primary"></i>
+</div>
+<span class="text-sm font-medium text-gray-500">Kerala Medical Services Corporation</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Healthcare Professional Training</h3>
+<p class="text-gray-700 mb-4">Developed and conducted training programs for primary healthcare professionals to identify and provide initial support for common mental health conditions in children and adults.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-calendar-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">2021 - 2022</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-user-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">350+ Professionals</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20crisis%20helpline%20center%20in%20Kerala%20with%20professional%20staff%20at%20workstations%20with%20computers%20and%20phones%2C%20mental%20health%20resources%20visible%20on%20walls%2C%20modern%20office%20setting%20with%20Kerala%20cultural%20elements&width=600&height=400&seq=govt4&orientation=landscape" alt="Crisis Helpline Initiative" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="text-sm font-medium text-gray-500">Kerala Social Justice Department</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Crisis Helpline Initiative</h3>
+<p class="text-gray-700 mb-4">Helped establish and train staff for a dedicated mental health crisis helpline providing immediate support and referrals for individuals experiencing psychological distress.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-calendar-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">2022 - Present</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-phone-line text-gray-500"></i>
+</div>
+<span class="text-sm text-gray-500">10,000+ Calls</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recognition Badges -->
+<div class="flex flex-wrap justify-center gap-6 mt-16">
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 mx-auto flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-award-line text-primary ri-2x"></i>
+</div>
+<h4 class="font-bold text-gray-900 mb-2">Excellence in Service</h4>
+<p class="text-sm text-gray-700">Kerala Health Department</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 mx-auto flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-medal-line text-primary ri-2x"></i>
+</div>
+<h4 class="font-bold text-gray-900 mb-2">Mental Health Champion</h4>
+<p class="text-sm text-gray-700">Kerala Mental Health Authority</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 mx-auto flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-heart-line text-primary ri-2x"></i>
+</div>
+<h4 class="font-bold text-gray-900 mb-2">Community Impact Award</h4>
+<p class="text-sm text-gray-700">Kerala Social Justice Department</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Public Clinic Initiatives -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Public Clinic Initiatives</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">Committed to making mental health support accessible to all through community outreach programs and public health collaborations.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Initiative 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20free%20consultation%20camp%20in%20Kerala%20with%20medical%20screening%20booths%2C%20information%20desks%2C%20and%20professional%20healthcare%20setup%20in%20a%20community%20center%20with%20traditional%20Kerala%20architectural%20elements%20visible&width=400&height=300&seq=clinic1&orientation=landscape" alt="Free Consultation Camps" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Free Consultation Camps</h3>
+<p class="text-gray-700 mb-4">Monthly free mental health consultation camps in underserved communities, providing initial assessments and referrals for continued care.</p>
+<div class="flex items-center gap-4 mb-4">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-700">8 Locations</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-user-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-700">1,200+ Beneficiaries</span>
+</div>
+</div>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">Learn more →</a>
+</div>
+</div>
+<!-- Initiative 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20community%20workshop%20in%20Kerala%20with%20participants%20seated%20in%20a%20circle%2C%20educational%20materials%20visible%2C%20in%20a%20bright%20community%20center%20with%20traditional%20Kerala%20elements%2C%20professional%20setting&width=400&height=300&seq=clinic2&orientation=landscape" alt="Community Workshops" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Community Workshops</h3>
+<p class="text-gray-700 mb-4">Regular workshops on mental health awareness, stress management, and parenting skills for community members and families.</p>
+<div class="flex items-center gap-4 mb-4">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-calendar-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-700">Quarterly Events</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-user-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-700">800+ Participants</span>
+</div>
+</div>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">Learn more →</a>
+</div>
+</div>
+<!-- Initiative 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20school%20mental%20health%20program%20in%20Kerala%20with%20educational%20materials%20for%20children%2C%20colorful%20posters%20about%20emotions%20and%20mental%20wellbeing%2C%20in%20a%20bright%20classroom%20with%20traditional%20Kerala%20school%20elements&width=400&height=300&seq=clinic3&orientation=landscape" alt="School Outreach Programs" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-3">School Outreach Programs</h3>
+<p class="text-gray-700 mb-4">Regular visits to public schools to conduct mental health screenings, awareness sessions, and teacher training on supporting student wellbeing.</p>
+<div class="flex items-center gap-4 mb-4">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-building-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-700">15 Schools</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-user-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-700">3,500+ Students</span>
+</div>
+</div>
+<a href="#contact" class="inline-block text-primary font-medium hover:underline">Learn more →</a>
+</div>
+</div>
+</div>
+<!-- Success Stories -->
+<div class="mt-16">
+<h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Success Stories</h3>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Success Story 1 -->
+<div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-user-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-900">Parent of 8-year-old</h4>
+<p class="text-sm text-gray-500">Behavioral Therapy Program</p>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"The free consultation camp was our first step toward getting help for our son's behavioral challenges. Dr. Matthews provided compassionate guidance and a clear treatment plan that has transformed our family dynamics. Within three months, we saw remarkable improvements in his behavior at school and home."</p>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<!-- Success Story 2 -->
+<div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-user-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-900">School Principal</h4>
+<p class="text-sm text-gray-500">School Mental Health Program</p>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"The mental health awareness program Dr. Matthews conducted at our school has been invaluable. Our teachers now feel equipped to recognize early signs of emotional distress in students and provide appropriate support. The stigma around mental health has significantly reduced among our school community."</p>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<!-- Impact Statistics -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">2,500+</div>
+<p class="text-gray-700">Free Consultations</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">35+</div>
+<p class="text-gray-700">Community Workshops</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">15</div>
+<p class="text-gray-700">Partner Schools</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="text-4xl font-bold text-primary mb-2">90%</div>
+<p class="text-gray-700">Satisfaction Rate</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Me Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Me</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">Dedicated to providing evidence-based, compassionate psychological care tailored to your unique needs.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Differentiator 1 -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-6">
+<i class="ri-graduation-cap-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Specialized Training</h3>
+<p class="text-gray-700">Advanced training in child behavioral therapy, trauma-informed care, and evidence-based approaches for emotional regulation in adults.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">PhD in Child Psychology</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Certified in Cognitive Behavioral Therapy</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">EMDR Therapy Certification</span>
+</li>
+</ul>
+</div>
+<!-- Differentiator 2 -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-6">
+<i class="ri-heart-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Compassionate Approach</h3>
+<p class="text-gray-700">Creating a safe, non-judgmental space where clients feel heard, understood, and supported throughout their healing journey.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Trauma-Informed Care</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Culturally Sensitive Practice</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Client-Centered Therapy</span>
+</li>
+</ul>
+</div>
+<!-- Differentiator 3 -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-6">
+<i class="ri-award-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Proven Results</h3>
+<p class="text-gray-700">Demonstrated success in helping clients overcome challenges and achieve meaningful improvements in their mental health and wellbeing.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">85% Client Improvement Rate</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Evidence-Based Approaches</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Regular Progress Assessment</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Testimonials -->
+<div class="mt-16">
+<h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">What My Clients Say</h3>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Testimonial 1 -->
+<div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex text-yellow-400 mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6">"Dr. Matthews helped my daughter overcome her anxiety issues with patience and skill. Her approach was gentle yet effective, and we saw significant improvements within a few months."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Priya M.</h4>
+<p class="text-sm text-gray-500">Parent of 10-year-old</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex text-yellow-400 mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6">"After struggling with work-related stress and anxiety for years, Dr. Matthews helped me develop effective coping strategies. Her compassionate approach made all the difference in my recovery."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Rajesh K.</h4>
+<p class="text-sm text-gray-500">IT Professional</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex text-yellow-400 mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6">"The school mental health program led by Dr. Matthews has transformed how we approach student wellbeing. Her expertise and dedication have been invaluable to our entire school community."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Anita T.</h4>
+<p class="text-sm text-gray-500">School Counselor</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation Process -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">The Consultation Process</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">A simple, structured approach to beginning your journey toward improved mental wellbeing.</p>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-blue-100 transform -translate-x-1/2"></div>
+<div class="space-y-12 relative">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Initial Contact</h3>
+<p class="text-gray-700">Reach out through the contact form, email, or phone to schedule your initial consultation. Share brief information about your concerns to help me prepare for our first meeting.</p>
+</div>
+<div class="md:w-12 relative flex justify-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full z-10">
+<span class="font-bold">1</span>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12">
+<img src="https://readdy.ai/api/search-image?query=A%20person%20using%20a%20laptop%20or%20phone%20to%20contact%20a%20psychologist%2C%20showing%20only%20hands%20typing%20on%20keyboard%20or%20holding%20phone%2C%20in%20a%20bright%20modern%20home%20setting%20with%20soft%20natural%20light&width=400&height=300&seq=step1&orientation=landscape" alt="Initial Contact" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right order-1 md:order-2">
+<img src="https://readdy.ai/api/search-image?query=A%20psychologists%20office%20with%20comfortable%20seating%2C%20soft%20lighting%2C%20plants%2C%20and%20a%20professional%20yet%20warm%20atmosphere%2C%20no%20people%20visible%2C%20showing%20a%20notepad%20and%20pen%20on%20a%20side%20table&width=400&height=300&seq=step2&orientation=landscape" alt="First Consultation" class="rounded-lg shadow-md w-full">
+</div>
+<div class="md:w-12 relative flex justify-center order-2 md:order-3">
+<div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full z-10">
+<span class="font-bold">2</span>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12 order-3 md:order-1">
+<h3 class="text-xl font-bold text-gray-900 mb-3">First Consultation</h3>
+<p class="text-gray-700">A 60-minute session to discuss your concerns in detail, explore your history, and identify goals for therapy. This session helps us determine the most appropriate approach for your needs.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Personalized Treatment Plan</h3>
+<p class="text-gray-700">Based on our initial consultation, I'll develop a customized treatment plan tailored to your specific needs, including recommended therapy approaches, frequency of sessions, and estimated timeline.</p>
+</div>
+<div class="md:w-12 relative flex justify-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full z-10">
+<span class="font-bold">3</span>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12">
+<img src="https://readdy.ai/api/search-image?query=A%20treatment%20plan%20document%20with%20notes%2C%20charts%2C%20and%20a%20professional%20layout%20on%20a%20desk%20with%20a%20pen%20and%20glasses%20nearby%2C%20in%20a%20bright%20office%20setting%20with%20soft%20natural%20light&width=400&height=300&seq=step3&orientation=landscape" alt="Personalized Treatment Plan" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right order-1 md:order-2">
+<img src="https://readdy.ai/api/search-image?query=A%20therapy%20session%20in%20progress%20showing%20two%20comfortable%20chairs%20facing%20each%20other%20in%20a%20professional%20office%20with%20soft%20lighting%2C%20plants%2C%20and%20a%20calming%20atmosphere%2C%20no%20faces%20visible&width=400&height=300&seq=step4&orientation=landscape" alt="Ongoing Sessions" class="rounded-lg shadow-md w-full">
+</div>
+<div class="md:w-12 relative flex justify-center order-2 md:order-3">
+<div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full z-10">
+<span class="font-bold">4</span>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12 order-3 md:order-1">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Ongoing Sessions</h3>
+<p class="text-gray-700">Regular therapy sessions (typically 45-60 minutes) to work toward your goals. Sessions can be conducted in-person at my office or online via secure video conferencing, based on your preference.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Progress Evaluation</h3>
+<p class="text-gray-700">Regular assessment of your progress toward therapy goals, with adjustments to the treatment plan as needed. Open communication ensures that therapy remains effective and aligned with your evolving needs.</p>
+</div>
+<div class="md:w-12 relative flex justify-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full z-10">
+<span class="font-bold">5</span>
+</div>
+</div>
+<div class="md:w-1/2 md:pl-12">
+<img src="https://readdy.ai/api/search-image?query=A%20progress%20chart%20or%20assessment%20form%20with%20positive%20trending%20graphs%20and%20notes%2C%20on%20a%20desk%20with%20a%20pen%20and%20notebook%2C%20in%20a%20professional%20office%20setting%20with%20soft%20natural%20light&width=400&height=300&seq=step5&orientation=landscape" alt="Progress Evaluation" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+</div>
+</div>
+<!-- Session Information -->
+<div class="grid md:grid-cols-3 gap-8 mt-16">
+<!-- Session Format -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-vidicon-line text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Session Formats</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">In-Person Sessions</span>
+<p class="text-sm text-gray-700">Available at my office in Kochi</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Online Sessions</span>
+<p class="text-sm text-gray-700">Secure video conferencing platform</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Group Sessions</span>
+<p class="text-sm text-gray-700">For specific therapy groups</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Session Duration -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-time-line text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Session Duration</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Initial Consultation</span>
+<p class="text-sm text-gray-700">60 minutes</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Regular Sessions</span>
+<p class="text-sm text-gray-700">45-60 minutes</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Family Sessions</span>
+<p class="text-sm text-gray-700">75-90 minutes</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Payment Information -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-bank-card-line text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Payment & Insurance</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Insurance Accepted</span>
+<p class="text-sm text-gray-700">Major health insurance providers</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Payment Options</span>
+<p class="text-sm text-gray-700">Credit/debit cards, bank transfer</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<span class="font-medium text-gray-900">Sliding Scale Options</span>
+<p class="text-sm text-gray-700">Available for eligible clients</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">Ready to take the first step toward improved mental wellbeing? Contact me to schedule a consultation or learn more about my services.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Contact Form -->
+<div class="lg:w-2/3 bg-white rounded-lg shadow-md p-8">
+<h3 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary" placeholder="Your name">
+</div>
+<div>
+<label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+<input type="email" id="email" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary" placeholder="Your email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary" placeholder="Your phone number">
+</div>
+<div>
+<label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+<div class="relative">
+<select id="service" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary appearance-none pr-8">
+<option value="" selected disabled>Select a service</option>
+<option value="child">Child Behavioral Therapy</option>
+<option value="adult">Adult Emotional Support</option>
+<option value="family">Family Therapy</option>
+<option value="consultation">Initial Consultation</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary" placeholder="Please briefly describe your concerns or questions"></textarea>
+</div>
+<div class="flex items-start mb-6">
+<input type="checkbox" id="consent" class="custom-checkbox">
+<label for="consent" class="text-gray-700 ml-2">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium transition-all hover:bg-primary/90 whitespace-nowrap">Send Message</button>
+</form>
+</div>
+<!-- Contact Information -->
+<div class="lg:w-1/3">
+<div class="bg-white rounded-lg shadow-md p-8 mb-8">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Office Address</h4>
+<p class="text-gray-700">123 Wellness Center, MG Road, Kochi, Kerala 682011</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Phone Number</h4>
+<p class="text-gray-700">+91 98765 43210</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Email Address</h4>
+<p class="text-gray-700">dr.matthews@mindwellness.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md p-8">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Office Hours</h3>
+<div class="space-y-3">
+<div class="flex justify-between">
+<span class="text-gray-700">Monday - Friday</span>
+<span class="font-medium text-gray-900">9:00 AM - 6:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">Saturday</span>
+<span class="font-medium text-gray-900">10:00 AM - 2:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">Sunday</span>
+<span class="font-medium text-gray-900">Closed</span>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-gray-200">
+<h4 class="font-medium text-gray-900 mb-3">Emergency Contact</h4>
+<p class="text-gray-700 mb-2">For mental health emergencies outside office hours, please contact:</p>
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="font-medium">Kerala Mental Health Helpline: 1800-258-5438</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Insurance Partners -->
+<div class="mt-16">
+<h3 class="text-xl font-bold text-gray-900 mb-8 text-center">Insurance Partners</h3>
+<div class="flex flex-wrap justify-center gap-8">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-shield-star-fill text-blue-600 ri-2x"></i>
+</div>
+<span class="font-medium">Star Health</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-heart-fill text-red-500 ri-2x"></i>
+</div>
+<span class="font-medium">Aditya Birla Health</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-shield-check-fill text-green-600 ri-2x"></i>
+</div>
+<span class="font-medium">HDFC ERGO</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-shield-keyhole-fill text-purple-600 ri-2x"></i>
+</div>
+<span class="font-medium">Bajaj Allianz</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-shield-user-fill text-orange-500 ri-2x"></i>
+</div>
+<span class="font-medium">ICICI Lombard</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section id="blog" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Latest Articles</h2>
+<p class="text-gray-700 max-w-2xl mx-auto">Insights, tips, and resources to support your mental health journey.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Blog Post 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20parent%20and%20child%20doing%20an%20activity%20together%20at%20a%20table%2C%20seen%20from%20above%20showing%20hands%20and%20materials%2C%20warm%20lighting%2C%20in%20a%20home%20setting%2C%20no%20faces%20visible&width=400&height=250&seq=blog1&orientation=landscape" alt="Supporting Children with ADHD" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-calendar-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-500">April 25, 2025</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Supporting Children with ADHD: Strategies for Parents</h3>
+<p class="text-gray-700 mb-4">Practical approaches to help children with ADHD thrive at home and school, focusing on structure, positive reinforcement, and effective communication.</p>
+<a href="#" class="inline-block text-primary font-medium hover:underline">Read More →</a>
+</div>
+</div>
+<!-- Blog Post 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20person%20practicing%20mindfulness%20meditation%20in%20a%20bright%20room%20with%20plants%2C%20seen%20from%20behind%20or%20side%20angle%20without%20showing%20face%2C%20natural%20light%2C%20peaceful%20setting&width=400&height=250&seq=blog2&orientation=landscape" alt="Mindfulness for Anxiety" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-calendar-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-500">April 18, 2025</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Mindfulness Techniques for Managing Anxiety</h3>
+<p class="text-gray-700 mb-4">Evidence-based mindfulness practices that can help reduce anxiety symptoms and promote emotional regulation in everyday situations.</p>
+<a href="#" class="inline-block text-primary font-medium hover:underline">Read More →</a>
+</div>
+</div>
+<!-- Blog Post 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20family%20having%20a%20conversation%20in%20a%20living%20room%2C%20showing%20only%20partial%20views%20or%20backs%20of%20heads%2C%20warm%20lighting%2C%20comfortable%20home%20setting%2C%20positive%20atmosphere&width=400&height=250&seq=blog3&orientation=landscape" alt="Effective Communication in Relationships" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-calendar-line text-primary"></i>
+</div>
+<span class="text-sm text-gray-500">April 10, 2025</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-3">Building Stronger Relationships Through Effective Communication</h3>
+<p class="text-gray-700 mb-4">Key communication skills that can help resolve conflicts, deepen connection, and foster understanding in personal and family relationships.</p>
+<a href="#" class="inline-block text-primary font-medium hover:underline">Read More →</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="#" class="inline-block bg-white text-primary border-2 border-primary px-6 py-3 !rounded-button font-medium transition-all hover:bg-gray-50 whitespace-nowrap">View All Articles</a>
+</div>
+</div>
+</section>
+<!-- Appointment Section -->
+<section id="appointment" class="py-16 bg-primary bg-opacity-10">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Take the First Step?</h2>
+<p class="text-gray-700 mb-8">Schedule your initial consultation today and begin your journey toward improved mental wellbeing.</p>
+<a href="#contact" class="inline-block bg-primary text-white px-8 py-4 !rounded-button font-medium transition-all hover:bg-primary/90 whitespace-nowrap">Book Your Appointment</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<!-- About Column -->
+<div>
+<h3 class="text-xl font-bold mb-6">Athulya SB</h3>
+<p class="text-gray-400 mb-6">Specialized psychological care for children and adults, with a focus on evidence-based approaches and compassionate support.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+<li><a href="#expertise" class="text-gray-400 hover:text-white transition-colors">Expertise</a></li>
+<li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+<li><a href="#blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<!-- Services -->
+<div>
+<h3 class="text-xl font-bold mb-6">Services</h3>
+<ul class="space-y-3">
+<li><a href="#child-services" class="text-gray-400 hover:text-white transition-colors">Child Behavioral Therapy</a></li>
+<li><a href="#adult-services" class="text-gray-400 hover:text-white transition-colors">Adult Emotional Support</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Family Therapy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Trauma Recovery</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Anxiety Management</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Depression Treatment</a></li>
+</ul>
+</div>
+<!-- Contact & Emergency -->
+<div>
+<h3 class="text-xl font-bold mb-6">Contact Information</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<span class="text-gray-400">123 Wellness Center, MG Road, Kochi, Kerala 682011</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="text-gray-400">+91 98765 43210</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<span class="text-gray-400">dr.matthews@mindwellness.com</span>
+</li>
+</ul>
+<div class="mt-6">
+<h4 class="font-bold text-white mb-2">Emergency Helplines</h4>
+<p class="text-gray-400 mb-2">Mental Health Crisis: 1800-258-5438</p>
+<p class="text-gray-400">Suicide Prevention: 9152987821</p>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 text-center">
+<div class="mb-6">
+<h3 class="text-lg font-bold mb-4">Government Project Enquiries</h3>
+<a href="mailto:govt.projects@mindwellness.com" class="text-primary hover:underline">govt.projects@mindwellness.com</a>
+</div>
+<!-- Newsletter -->
+<div class="max-w-md mx-auto mb-8">
+<h3 class="text-lg font-bold mb-4">Subscribe to Our Newsletter</h3>
+<div class="flex">
+<input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l focus:outline-none text-gray-900">
+<button class="bg-primary text-white px-6 py-3 rounded-r font-medium whitespace-nowrap">Subscribe</button>
+</div>
+</div>
+<p class="text-gray-500">&copy; 2025 Athulya SB. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu toggle
+const mobileMenuButton = document.querySelector('.lg\\:hidden');
+const nav = document.querySelector('nav');
+if (mobileMenuButton && nav) {
+mobileMenuButton.addEventListener('click', function() {
+nav.classList.toggle('hidden');
+nav.classList.toggle('flex');
+nav.classList.toggle('flex-col');
+nav.classList.toggle('absolute');
+nav.classList.toggle('top-16');
+nav.classList.toggle('left-0');
+nav.classList.toggle('right-0');
+nav.classList.toggle('bg-white');
+nav.classList.toggle('p-4');
+nav.classList.toggle('shadow-md');
+nav.classList.toggle('z-50');
+});
+}
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Form validation
+const contactForm = document.querySelector('form');
+if (contactForm) {
+contactForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const message = document.getElementById('message').value;
+const consent = document.getElementById('consent').checked;
+if (!name || !email || !message || !consent) {
+alert('Please fill in all required fields and provide consent.');
+return;
+}
+// Here you would normally send the form data to a server
+alert('Thank you for your message! I will get back to you soon.');
+contactForm.reset();
+});
+}
+});
+</script>
+</body>
+</html>
